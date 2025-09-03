@@ -1,2 +1,2 @@
-# sites-projetos
-Sites desenvolvidos para aprimorar habilidades voltadas para o desenvolvimento web. 
+# Projetos para desenvolvimento web
+Aqui é o local onde irei compartilhar minha evolução dentro do desenvolvimento web, através de projetos pessoais!!!
