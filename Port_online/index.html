@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - João Pedro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #be123c;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #be123c;
+    }
+    .card p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1rem;
+    }
+    .card a {
+      text-decoration: none;
+      background: #be123c;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .card a:hover {
+      background: #a40f34;
+    }
+    section.contact {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    section.contact p {
+      font-size: 1.1rem;
+    }
+    a.link {
+        text-decoration: none;
+        color: black;
+    }
+    a.link:hover {
+        text-decoration: underline;
+        color: #a40f34;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>João Pedro Marques Rogoski</h1>
+    <p>Desenvolvedor Web | Criação de Sites Modernos e Responsivos 🚀</p>
+  </header>
+
+  <main>
+    <h2>Meus Projetos</h2>
+    <div class="projects">
+      <div class="card">
+        <h2>🍕 Site de Restaurante</h2>
+        <p>Cardápio online com design moderno e responsivo.</p>
+        <a href="https://pizzaria-nonna.vercel.app/" target="_blank">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h2>⚖️ Site de Advocacia</h2>
+        <p>Institucional para escritório jurídico com página de serviços.</p>
+        <a href="https://advogado-site.vercel.app/" target="_blank">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h2>🛍️ Loja Virtual</h2>
+        <p>E-commerce fictício com carrinho de compras integrado.</p>
+        <a href="https://e-commerce-lojaa.vercel.app/" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <section class="contact">
+      <h2>📞 Entre em Contato</h2>
+      <p>Email: <b>contato.joaopmarques@gmail.com</b></p>
+      <p>WhatsApp: <b>(51) 99565-2022</b></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jo%C3%A3o-marques-649144351/" target="_blank" class="link">Meu Perfil</a></p>
+    </section>
+  </main>
+</body>
+</html>
