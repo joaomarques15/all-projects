@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body{
+    font-family: "sriracha", sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    margin: -10px;
+    padding: 30px;
+}
+
+header > h1 {
+    font-size: 800%;
+    text-align: center;
+    margin: 0px;
+    
+}
+header > p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.padrao {
+    color: black;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+#imagem {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 98vh;
+    margin: -10px;
+}
+
+aside > p {
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    color: white;
+}
+
+#imagem2 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 98vh;
+    margin: -8px;
+}
+
+#imagem2 > p {
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: -10px;
+    text-align: center;
+}
