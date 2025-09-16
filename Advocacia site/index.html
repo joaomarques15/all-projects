@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Silva & Associados - Advocacia de Excelência</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground">
+    <!-- Header -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">Dr. Silva & Associados</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="nav-link">Início</a>
+                        <a href="#sobre" class="nav-link">Sobre</a>
+                        <a href="#servicos" class="nav-link">Serviços</a>
+                        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-foreground hover:text-primary">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#inicio" class="mobile-nav-link">Início</a>
+                <a href="#sobre" class="mobile-nav-link">Sobre</a>
+                <a href="#servicos" class="mobile-nav-link">Serviços</a>
+                <a href="#depoimentos" class="mobile-nav-link">Depoimentos</a>
+                <a href="#contato" class="mobile-nav-link">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-overlay">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+                <div class="text-center w-full">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+                        Seu Parceiro Jurídico de Confiança
+                    </h1>
+                    <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in-delay">
+                        Defendemos seus direitos com excelência, dedicação e resultados comprovados há mais de 15 anos
+                    </p>
+                    <div class="space-x-4">
+                        <button class="btn-primary animate-fade-in-delay-2">
+                            Consulta Gratuita
+                        </button>
+                        <button class="btn-secondary animate-fade-in-delay-2">
+                            Nossos Serviços
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 enhanced-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-6">
+                        Experiência que Faz a Diferença
+                    </h2>
+                    <p class="text-lg text-muted-foreground mb-6 leading-relaxed">
+                        Com mais de 15 anos de atuação no mercado jurídico, nosso escritório se consolidou como referência em advocacia de excelência. Nossa equipe altamente qualificada está preparada para oferecer soluções jurídicas eficazes e personalizadas.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="enhanced-card stat-card floating-element">
+                            <div class="text-3xl font-bold accent-text">500+</div>
+                            <div class="text-muted-foreground">Casos Resolvidos</div>
+                        </div>
+                        <div class="enhanced-card stat-card floating-element" style="animation-delay: 0.5s;">
+                            <div class="text-3xl font-bold accent-text">95%</div>
+                            <div class="text-muted-foreground">Taxa de Sucesso</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="/placeholder.svg?height=500&width=600" 
+                         alt="Dr. Silva em seu escritório" 
+                         class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 enhanced-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4">
+                    Áreas de Atuação
+                </h2>
+                <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Oferecemos serviços jurídicos especializados em diversas áreas do direito
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="enhanced-card service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3 class="text-xl font-bold accent-text mb-3">Direito Civil</h3>
+                    <p class="text-muted-foreground">Contratos, responsabilidade civil, direito de família e sucessões.</p>
+                </div>
+                <div class="enhanced-card service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="text-xl font-bold accent-text mb-3">Direito Empresarial</h3>
+                    <p class="text-muted-foreground">Constituição de empresas, contratos comerciais e consultoria jurídica.</p>
+                </div>
+                <div class="enhanced-card service-card">
+                    <div class="service-icon">👥</div>
+                    <h3 class="text-xl font-bold accent-text mb-3">Direito Trabalhista</h3>
+                    <p class="text-muted-foreground">Defesa de direitos trabalhistas e assessoria em relações de trabalho.</p>
+                </div>
+                <div class="enhanced-card service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="text-xl font-bold accent-text mb-3">Direito Imobiliário</h3>
+                    <p class="text-muted-foreground">Compra, venda, locação e regularização de imóveis.</p>
+                </div>
+                <div class="enhanced-card service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 class="text-xl font-bold accent-text mb-3">Direito Criminal</h3>
+                    <p class="text-muted-foreground">Defesa criminal e acompanhamento processual especializado.</p>
+                </div>
+                <div class="enhanced-card service-card">
+                    <div class="service-icon">📋</div>
+                    <h3 class="text-xl font-bold accent-text mb-3">Consultoria Jurídica</h3>
+                    <p class="text-muted-foreground">Orientação preventiva e assessoria jurídica personalizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-20 bg-muted">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+                    O Que Nossos Clientes Dizem
+                </h2>
+                <p class="text-lg text-muted-foreground">
+                    Depoimentos reais de clientes satisfeitos
+                </p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Excelente atendimento e profissionalismo. Dr. Silva resolveu meu caso com eficiência e dedicação. Recomendo!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Maria Santos</strong>
+                            <span>Empresária</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Equipe muito competente e atenciosa. Conseguiram resolver uma questão complexa de forma rápida e eficaz."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>João Oliveira</strong>
+                            <span>Comerciante</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Profissionais de primeira qualidade. Sempre disponíveis e com soluções práticas para nossos problemas jurídicos."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <strong>Ana Costa</strong>
+                            <span>Advogada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-20 contact-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Seção de destaque completamente redesenhada -->
+            <div class="contact-highlight">
+                <h3>🚨 Precisa de Ajuda Jurídica Urgente?</h3>
+                <p>Nossa equipe está pronta para atender você! Consulta gratuita disponível 24/7.</p>
+                <button class="contact-cta-button" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">
+                    💬 Fale Conosco Agora - GRÁTIS
+                </button>
+            </div>
+            
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">
+                    Entre em Contato
+                </h2>
+                <p class="text-xl text-red-700 font-semibold">
+                    Estamos prontos para defender seus direitos
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="space-y-8">
+                        <!-- Informações de contato redesenhadas -->
+                        <div class="contact-info">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Nosso Escritório</h3>
+                                <p class="text-gray-700 text-lg">Rua das Flores, 123 - Centro<br>Sua Cidade - Estado - CEP 12345-678</p>
+                                <p class="text-red-600 font-semibold mt-2">📍 Localização privilegiada no centro</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Telefones</h3>
+                                <p class="text-gray-700 text-lg">(11) 9999-9999 - WhatsApp<br>(11) 8888-8888 - Fixo</p>
+                                <p class="text-red-600 font-semibold mt-2">📱 Atendimento 24h via WhatsApp</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">E-mails</h3>
+                                <p class="text-gray-700 text-lg">contato@drsilvaadvocacia.com.br<br>urgente@drsilvaadvocacia.com.br</p>
+                                <p class="text-red-600 font-semibold mt-2">⚡ Resposta em até 2 horas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h3 class="text-xl font-bold accent-text mb-2">Horário de Atendimento</h3>
+                                <p class="text-gray-700 text-lg">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                <p class="text-red-600 font-semibold mt-2">🚨 Emergências: 24h por dia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Formulário completamente redesenhado -->
+                    <form class="contact-form" id="contact-form">
+                        <div class="contact-form-title">
+                            <h3>📝 Envie sua Mensagem</h3>
+                            <p>Responderemos em até 2 horas! Consulta 100% GRATUITA</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">👤 Nome Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">📧 E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">📱 Telefone/WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(11) 99999-9999">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">⚖️ Área Jurídica</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione a área jurídica</option>
+                                <option value="civil">🏠 Direito Civil</option>
+                                <option value="empresarial">🏢 Direito Empresarial</option>
+                                <option value="trabalhista">👥 Direito Trabalhista</option>
+                                <option value="imobiliario">🏘️ Direito Imobiliário</option>
+                                <option value="criminal">🛡️ Direito Criminal</option>
+                                <option value="consultoria">📋 Consultoria Jurídica</option>
+                                <option value="urgente">🚨 Caso Urgente</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">💬 Descreva sua Situação</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Conte-nos detalhadamente sobre sua situação jurídica. Quanto mais informações, melhor poderemos ajudá-lo..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact-submit-btn pulse-red">
+                            🚀 ENVIAR MENSAGEM AGORA - GRÁTIS
+                        </button>
+                        
+                        <div class="contact-guarantee">
+                            <p>✅ Consulta 100% Gratuita • ⚡ Resposta em até 2h • 🔒 Sigilo Absoluto • 🏆 15+ Anos de Experiência</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-primary-foreground py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Dr. Silva & Associados</h3>
+                    <p class="text-primary-foreground/80 mb-4">
+                        Advocacia de excelência com mais de 15 anos de experiência defendendo seus direitos.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="#servicos" class="footer-link">Serviços</a></li>
+                        <li><a href="#depoimentos" class="footer-link">Depoimentos</a></li>
+                        <li><a href="#contato" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contato Rápido</h4>
+                    <div class="space-y-2 text-primary-foreground/80">
+                        <p>📍 Rua das Flores, 123 - Centro</p>
+                        <p>📞 (11) 9999-9999</p>
+                        <p>✉️ contato@drsilvaadvocacia.com.br</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
+                <p class="text-primary-foreground/80">
+                    © 2024 Dr. Silva & Associados. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
